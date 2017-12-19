@@ -1,0 +1,35 @@
+*{
+	font-size: 16px;
+}
+.itens-produtos{
+	transition: 0.2s;
+	color: #000000;
+	background-color: #eff2f9;
+	list-style: none;
+	padding: 10px;
+	width: 250px;
+	font-family: sans-serif;
+}
+
+.itens-produtos:hover{
+	transition: 0.2s;
+	color: #0b203f;
+	font-size: 1.1em;
+	background-color: #d6e1fc;
+	padding: 12px;
+	cursor: pointer;
+}
+
+span{
+	color: blue;
+}
+
+.produto-selecionado{
+	transition: 0.2s;
+	color: #000000;
+	background-color: #eff2f9;
+	list-style: none;
+	padding: 10px;
+	width: 100%;
+	font-family: sans-serif;
+}

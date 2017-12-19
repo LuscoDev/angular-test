@@ -1,0 +1,12 @@
+<ul>
+  <li *ngFor="let produto of data" class="itens-produtos" (click)="exibeInfo(produto)"> {{ produto.nomeProduto }} </li>
+</ul>
+
+<div *ngIf="produtoSelecionado" class="produto-selecionado">
+  <h2> Produto: {{ produtoSelecionado.nomeProduto | uppercase}} </h2>  
+  <input type="text" [(ngModel)]="produtoSelecionado.nomeProduto" >
+  <h3> Código: {{ produtoSelecionado.idProduto }} </h3>
+  <h2> Valor: {{ produtoSelecionado.valorProduto }} </h2>
+
+  <button type="submit" (click)='clicado()' > Atualizar </button>
+</div>
